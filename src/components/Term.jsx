@@ -1,12 +1,12 @@
 import React from "react";
 
-function Term() {
+function Term(props) {
   return (
     <dt>
-      <span className="emoji" role="img" aria-label="Tense Biceps">
-        💪
+      <span className="emoji" role="img" aria-label={props.emojiTitle}>
+        {props.emojiImage}
       </span>
-      <span>Tense Biceps</span>
+      <span>{props.emojiTitle}</span>
     </dt>
   );
 }

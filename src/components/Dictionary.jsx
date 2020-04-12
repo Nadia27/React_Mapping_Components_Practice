@@ -2,12 +2,13 @@ import React from "react";
 import Term from "./Term";
 import Description from "./Description";
 
-function Dictionary() {
+function Dictionary(props) {
+  console.log(props);
   return (
     <dl className="dictionary">
       <div className="term">
-        <Term />
-        <Description />
+        <Term emojiImage={props.emoji} emojiTitle={props.name} />
+        <Description emojiDescription={props.meaning} />
       </div>
       {/* <div className="term">
         <dt>

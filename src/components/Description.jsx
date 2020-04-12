@@ -1,12 +1,7 @@
 import React from "react";
 
-function Description() {
-  return (
-    <dd>
-      “You can do that!” or “I feel strong!” Arm with tense biceps. Also used in
-      connection with doing sports, e.g. at the gym.
-    </dd>
-  );
+function Description(props) {
+  return <dd>{props.emojiDescription}</dd>;
 }
 
 export default Description;
