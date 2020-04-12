@@ -1,21 +1,15 @@
 import React from "react";
+import Term from "./Term";
+import Description from "./Description";
 
 function Dictionary() {
   return (
     <dl className="dictionary">
       <div className="term">
-        <dt>
-          <span className="emoji" role="img" aria-label="Tense Biceps">
-            💪
-          </span>
-          <span>Tense Biceps</span>
-        </dt>
-        <dd>
-          “You can do that!” or “I feel strong!” Arm with tense biceps. Also
-          used in connection with doing sports, e.g. at the gym.
-        </dd>
+        <Term />
+        <Description />
       </div>
-      <div className="term">
+      {/* <div className="term">
         <dt>
           <span className="emoji" role="img" aria-label="Tense Biceps">
             🙏
@@ -40,7 +34,7 @@ function Dictionary() {
           is laughing boundlessly. The emoji version of “rofl“. Stands for
           „rolling on the floor, laughing“.
         </dd>
-      </div>
+      </div>*/}
     </dl>
   );
 }
