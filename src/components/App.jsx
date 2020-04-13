@@ -2,7 +2,7 @@ import React from "react";
 import Dictionary from "./Dictionary";
 import emojipedia from "../emojipedia";
 
-console.log(emojipedia);
+//console.log(emojipedia);
 
 function createDictionary(emoji) {
   return (
@@ -21,7 +21,7 @@ function App() {
       <h1>
         <span>emojipedia</span>
       </h1>
-      {emojipedia.map(createDictionary)}
+      <dl className="dictionary">{emojipedia.map(createDictionary)}</dl>
     </div>
   );
 }
